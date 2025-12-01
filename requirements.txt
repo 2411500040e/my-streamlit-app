@@ -6,3 +6,4 @@ wordcloud
 plotly
 Pillow
 nltk
+Sastrawi
