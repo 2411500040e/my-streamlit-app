@@ -90,6 +90,9 @@ def create_comparison_dataframe(preprocessed_results):
             'Final Text': ' '.join(result['stemmed'][:15]) + '...'
         })
         
+    df = pd.DataFrame(data)
+    return df
+
 def analyze_sentiment(text):
     """
     Simple rule-based sentiment analysis for Indonesian text
@@ -231,7 +234,7 @@ if __name__ == "__main__":
     print("\n" + "=" * 70)
     print("RESULTS DATAFRAME")
     print("=" * 70)
-    df = create_sentiment_dataframe(results)
+    df = create_comparison_dataframe(results)
     print(df.to_string(index=False))
     
     # Word frequency
@@ -241,3 +244,5 @@ if __name__ == "__main__":
     word_freq = get_word_frequency(results, top_n=10)
     for word, count in word_freq:
         print(f"{word}: {count}")
+
+
