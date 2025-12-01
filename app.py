@@ -31,7 +31,7 @@ with st.sidebar:
     )
     
     st.divider()
-    st.info("**Dibuat oleh:** Zahfandhika Fauzan Maldini\n\n**Mata Kuliah:** NLP")
+    st.info("**Dibuat oleh:** Muhammad Bishri Annas\n\n**Mata Kuliah:** NLP")
 
 if input_method == "Upload CSV":
     st.subheader("Upload File CSV")
@@ -289,3 +289,4 @@ else:
 
 st.divider()
 st.caption("Mini Project NLP - Analisis Topik Ulasan Produk E-commerce")
+
