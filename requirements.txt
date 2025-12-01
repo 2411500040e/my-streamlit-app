@@ -5,3 +5,4 @@ numpy
 wordcloud
 plotly
 Pillow
+nltk
